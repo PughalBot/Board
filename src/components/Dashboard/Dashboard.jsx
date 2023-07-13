@@ -205,17 +205,6 @@ const Dashboard = () => {
                 <div className=" mt-5 flex flex-col gap-y-3">
                   <div className="border-l-4 border-[#9BDD7C] py-1 pl-3">
                     <h4 className="font-lato text-sm font-bold">
-                      Check operation at Giga Factory 1
-                    </h4>
-                    <div className="font-lato text-xs text-[#999999]">
-                      18.00-20.00
-                    </div>
-                    <div className="font-lato text-xs text-[#999999]">
-                      at Central Jakarta
-                    </div>
-                  </div>
-                  <div className="border-l-4 border-[#9BD] py-1 pl-3">
-                    <h4 className="font-lato text-sm font-bold">
                       Meeting with suppliers from Kuta Bali
                     </h4>
                     <div className="font-lato text-xs text-[#999999]">
@@ -223,6 +212,17 @@ const Dashboard = () => {
                     </div>
                     <div className="font-lato text-xs text-[#999999]">
                       at Sunset Road, Kuta, Bali
+                    </div>
+                  </div>
+                  <div className="border-l-4 border-[#9BD] py-1 pl-3">
+                    <h4 className="font-lato text-sm font-bold">
+                      Check operation at Giga Factory 1
+                    </h4>
+                    <div className="font-lato text-xs text-[#999999]">
+                      18.00-20.00
+                    </div>
+                    <div className="font-lato text-xs text-[#999999]">
+                      at Central Jakarta
                     </div>
                   </div>
                 </div>

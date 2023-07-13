@@ -16,7 +16,7 @@ const CustomPieChart = () => {
           data={data}
           dataKey="value"
           nameKey="name"
-          outerRadius={70}
+          outerRadius={60}
           cx={"50%"}
           cy={"50%"}
           fill="#8884d8"
