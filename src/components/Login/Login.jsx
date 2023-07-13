@@ -37,7 +37,7 @@ const Login = () => {
                   Sign in with Google
                 </iv>
               </button>
-              <button className="flex w-full items-center gap-x-2.5 rounded-[10px] bg-white px-6 py-3 transition-[box-shadow] hover:shadow-md md:w-auto md:px-5 md:py-2">
+              <button onClick={onSubmitHandler} className="flex w-full items-center gap-x-2.5 rounded-[10px] bg-white px-6 py-3 transition-[box-shadow] hover:shadow-md md:w-auto md:px-5 md:py-2">
                 <Icon name={"apple"} size={"14px"} />
                 <div className="w-full text-center font-montserrat text-xs text-[#858585]">
                   Sign in with Apple
