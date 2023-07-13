@@ -8,7 +8,7 @@ const Login = () => {
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    Router.push("/dashboard");
+    Router.push("/");
   };
 
   if (session) Router.push("/dashboard");
@@ -85,7 +85,7 @@ const Login = () => {
                 <button
                   type="submit"
                   className="w-full rounded-[10px] bg-black py-2.5 font-montserrat text-sm font-bold text-white"
-                  
+                  onClick={signIn}  
                 >
                   Sign In
                 </button>
