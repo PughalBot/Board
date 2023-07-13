@@ -4,14 +4,11 @@ import Router from "next/router";
 import { useSession, signIn, signOut } from "next-auth/react";
 
 const Login = () => {
-  const { data: session } = useSession();
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    Router.push("/");
+    Router.push("/dashboard");
   };
-
-  if (session) Router.push("/dashboard");
 
   return (
     <div className="h-screen w-screen bg-customGray">
@@ -33,7 +30,7 @@ const Login = () => {
             <div className="my-6 flex w-full flex-1 flex-wrap gap-6 md:w-auto">
               <button
                 className="flex w-full items-center gap-x-2.5 rounded-[10px] bg-white px-6 py-3 transition-[box-shadow] hover:shadow-md md:w-auto md:px-5 md:py-2"
-                onClick={signIn}
+                onClick={onSubmitHandler}
               >
                 <Icon name={"google"} size={"14px"} />
                 <iv className="w-full text-center font-montserrat text-xs text-[#858585] ">

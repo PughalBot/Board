@@ -3,13 +3,10 @@ import { Icon, Sidebar, CustomPieChart, CustomLineChart } from "..";
 import { useState } from "react";
 
 const Dashboard = () => {
-  const { data: session } = useSession();
-  console.log("session", session);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    session && (
       <div className="grid h-full min-h-screen w-screen grid-cols-1 overflow-hidden bg-customGray xl:grid-cols-[20%_auto] xl:p-8">
         {/* Section-1 : Sidebar */}
         <Sidebar isOpen={isNavOpen} />
@@ -47,7 +44,7 @@ const Dashboard = () => {
 
               <div className="relative">
                 <img
-                  src={session.user.image || "profile.png"}
+                  src="profile.png"
                   alt="avataar"
                   className="h-7 w-7 cursor-pointer rounded-full"
                   onClick={() => setIsDropdownOpen((prev) => !prev)}
@@ -58,10 +55,10 @@ const Dashboard = () => {
                   <div class="absolute right-0 z-50 my-4 list-none divide-y divide-gray-100 rounded-lg bg-white text-base shadow dark:divide-gray-600 dark:bg-gray-700">
                     <div class="px-4 py-3">
                       <span class="block text-sm text-gray-900 dark:text-white">
-                        {session.user.name}
+                        Username
                       </span>
                       <span class="block truncate  text-sm text-gray-500 dark:text-gray-400">
-                        {session.user.email}
+                        example@email.com
                       </span>
                     </div>
                     <ul class="py-2" aria-labelledby="user-menu-button">
@@ -235,7 +232,6 @@ const Dashboard = () => {
         </div>
       </div>
     )
-  );
 };
 
 export default Dashboard;

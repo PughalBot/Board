@@ -18,10 +18,8 @@ const montserrat = Montserrat({
 
 export default function App({ Component, pageProps, session }) {
   return (
-    <SessionProvider session={session}>
       <main className={`${lato.variable} ${montserrat.variable}`}>
         <Component {...pageProps} />
       </main>
-    </SessionProvider>
   );
 }
