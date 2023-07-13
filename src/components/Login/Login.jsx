@@ -81,8 +81,7 @@ const Login = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-[10px] bg-black py-2.5 font-montserrat text-sm font-bold text-white"
-                  onClick={signIn}  
+                  className="w-full rounded-[10px] bg-black py-2.5 font-montserrat text-sm font-bold text-white"  
                 >
                   Sign In
                 </button>
